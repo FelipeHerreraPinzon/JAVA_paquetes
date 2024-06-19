@@ -1,7 +1,7 @@
-package com.miproyectos.app;
+package com.miproyectos.app.jardin;
+import com.miproyectos.app.jardin.Perro;
 import com.miproyectos.app.hogar.Gato;
 import com.miproyectos.app.hogar.Persona;
-import com.miproyectos.app.hogar.*;
 
 public class EjemploPaquetes {
     public static void main(String[] args) {
@@ -9,8 +9,8 @@ public class EjemploPaquetes {
         // com.miproyectos.app.hogar.Persona persona = new com.miproyectos.app.hogar.Persona();
 
         Persona persona = new Persona();
-        persona.nombre = "Felip";
-        System.out.println(persona.nombre);
+        persona.setNombre("Felipe");
+        System.out.println(persona.getNombre());
 
         Gato gato = new Gato();
         String nombreGato = gato.nombre;
@@ -22,5 +22,8 @@ public class EjemploPaquetes {
         System.out.println("nombre perro = " + perro.nombre);
         perro.raza = "Pator Aleman";
         System.out.println("raza perro = " + perro.raza);
+
+        String jugando = perro.jugar(persona);
+        System.out.println("jugando = " + jugando);
     }
 }
