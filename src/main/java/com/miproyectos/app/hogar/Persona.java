@@ -3,6 +3,10 @@ package com.miproyectos.app.hogar;
 public class Persona {
     private String nombre;
     private String apellido;
+    private ColorPelo colorPelo;
+
+    public static final String GENERO_MASCULINO = "Masculino";
+    public static final String GENERO_FEMENINO = "Femenino";
 
     public String getNombre() {
         return nombre;
@@ -24,5 +28,15 @@ public class Persona {
         return "lanzar la pelota";
     }
 
+    public static String saludar(){
+        return "hola que tal !!!";
+    }
 
+    public ColorPelo getColorPelo() {
+        return colorPelo;
+    }
+
+    public void setColorPelo(ColorPelo colorPelo) {
+        this.colorPelo = colorPelo;
+    }
 }
